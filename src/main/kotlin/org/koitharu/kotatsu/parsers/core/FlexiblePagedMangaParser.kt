@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package org.koitharu.kotatsu.parsers.core
 
 import androidx.annotation.VisibleForTesting
@@ -22,6 +24,7 @@ internal abstract class FlexiblePagedMangaParser(
 	@JvmField
 	protected val searchPaginator: Paginator = Paginator(searchPageSize)
 
+	@Deprecated("Too complex. Use getList with filter instead")
 	final override suspend fun getList(query: MangaSearchQuery): List<Manga> {
 		var containTitleNameCriteria = false
 		query.criteria.forEach {

@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package org.koitharu.kotatsu.parsers.core
 
 import kotlinx.coroutines.Dispatchers

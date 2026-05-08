@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package org.koitharu.kotatsu.parsers.util
 
 import org.koitharu.kotatsu.parsers.model.MangaListFilter
