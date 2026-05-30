@@ -53,6 +53,13 @@ jobs:
                     fi
                 continue-on-error: true
 
+            -   name: Upload artifacts to GitHub Actions 📦
+                uses: actions/upload-artifact@v4
+                with:
+                    name: plugin-jar
+                    path: ${{ env.D8_PATH }}
+                    retention-days: 30
+
             -   name: Upload artifacts 🌐
                 uses: softprops/action-gh-release@b4309332981a82ec1c5618f44dd2e27cc8bfbfda # v3.0.0
                 with:
